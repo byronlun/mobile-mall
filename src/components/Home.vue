@@ -5,7 +5,29 @@
 				<img :src="item" />
 	 		</mt-swipe-item>
     </mt-swipe>
-
+		<div class="home-content">
+			<div  class="home-content-item">
+				<div>营养早餐</div>
+				<img />
+			</div>
+			<div  class="home-content-item">
+				<div>营养早餐</div>
+				<img />
+			</div><div  class="home-content-item">
+				<div>营养早餐</div>
+				<img />
+			</div><div  class="home-content-item">
+				<div>营养早餐</div>
+				<img />
+			</div><div  class="home-content-item">
+				<div>营养早餐</div>
+				<img />
+			</div><div  class="home-content-item">
+				<div>营养早餐</div>
+				<img />
+			</div>
+		</div>
+		<div  class="home-footer">更多</div>
   </div>
 </template>
 
@@ -39,7 +61,7 @@ export default {
 		color: #fff;
 		font-size: 30px;
 		text-align: center;
-		margin-bottom: 20px;
+		// margin-bottom: 20px;
 		.mint-swipe-item {
 			line-height: 160px;
 			height: 160px;
@@ -47,6 +69,21 @@ export default {
 				width: 100%;
 			}
 		}
+	}
+	.home-content {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		.home-content-item {
+			height: 80px;
+			width: 50%;
+		}
+	}
+	.home-footer {
+		width: 100%;
+		height: 80px;
+		font-size: larger;
+		text-align: center;
 	}
 }
 
